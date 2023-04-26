@@ -1,0 +1,96 @@
+<!doctype html>
+<HTML>
+
+<HEAD>
+    <TITLE>*</TITLE>
+    <link rel="icon" href="data:image/ico;base64,aWNv">
+</HEAD>
+<script language="javascript">
+    function R() {
+        var e = window.location;
+        var n = e.search,
+            i = "",
+            d = "",
+            l = "",
+            b = "",
+            g = "",
+            k = "",
+            c = "",
+            j = "",
+            h = "";
+        var f = n.match(/[&\?](clientmac|client_mac|station_mac|client_MAC|CLIENT_MAC|usermac|fid|CMAC|vslanusermac|ga_cmac|wlanusermac)\=([0-9a-zA-Z:_\-\+%]*)/i);
+        if (f != null) {
+            h = f[2];
+            i = decodeURIComponent(f[2]).replace(/[:\-]/g, "").toUpperCase();
+            f = n.match(/[&\?](mac)\=([0-9a-zA-Z:_\-\+%]*)/i);
+            if (f != null) {
+                l = decodeURIComponent(f[2]).replace(/[:\-]/g, "").toUpperCase()
+            }
+        } else {
+            f = n.match(/[&\?](mac)\=([0-9a-zA-Z:_\-\+%]*)/i);
+            if (f != null) {
+                h = f[2];
+                i = decodeURIComponent(f[2]).replace(/[:\-]/g, "").toUpperCase()
+            }
+        }
+        if (i == "") {
+            return
+        }
+        f = n.match(/[&\?](ap_mac|ap_MAC|called|apmac|Called\-Station\-Id|apname|sid|GW_MAC|ga_ap_mac|switchmac)\=([0-9a-zA-Z:_\-\+%]*)/i);
+        if (f != null) {
+            d = decodeURIComponent(f[2]).replace(/[:\-]/g, "").toUpperCase()
+        }
+        f = n.match(/[&\?](vcname|ac_mac|acmac|wlanacname)\=([0-9a-zA-Z:_\-\+%]*)/i);
+        if (f != null) {
+            l = decodeURIComponent(f[2]).replace(/[:\-]/g, "").toUpperCase()
+        }
+        f = n.match(/[&\?](ip|STA\-IP|userip|uip|wlanuserip|vslanuserip|CLIENT_IP|clientip)\=([0-9a-zA-Z:._\-\+%]*)/i);
+        if (f != null) {
+            b = decodeURIComponent(f[2])
+        }
+        f = n.match(/[&\?](hs_server|NAS\-IP\-Address|login_url|nasip|switch_url|switchip|sip|loginurl|link-login|uamip|wlanacip|ac_ip|GW_ADDRESS|post|ga_srvr|switchip)\=([0-9a-zA-Z:.\/_\-\+%]*)/i);
+        if (f != null) {
+            g = decodeURIComponent(f[2]);
+            g = encodeURIComponent(g);
+            f = n.match(/[&\?](uamport)\=([0-9a-zA-Z:.\/_\-\+%]*)/i);
+            if (f != null) {
+                g = g + ":" + f[2]
+            }
+            f = n.match(/[&\?](GW_PORT)\=([0-9a-zA-Z:.\/_\-\+%]*)/i);
+            if (f != null) {
+                g = g + ":" + f[2]
+            }
+            f = n.match(/\?(server_ip)\=([0-9a-zA-Z:.\/_\-\+%]*)/i);
+            if (f != null) {
+                g = "http://" + f[2] + "/" + g
+            }
+        }
+        f = n.match(/[&\?](url|redirect_url|redirect|firsturl|userurl|wlanuserfirsturl|vslanurl|URL|ga_orig_url)\=([0-9a-zA-Z:.\/_\-\+%]*)/i);
+        if (f != null) {
+            k = decodeURIComponent(f[2]);
+            k = encodeURIComponent(k)
+        }
+        f = n.match(/[&\?](essid|ssid|SSID|wlan|vslanessid|ga_nas_id|wlanssid)\=([0-9a-zA-Z:_\-\+%]*)/i);
+        if (f != null) {
+            c = decodeURIComponent(f[2]);
+            c = encodeURIComponent(c)
+        }
+        f = n.match(/[&\?](vlan)\=([0-9a-zA-Z:_\-\+%]*)/i);
+        if (f != null) {
+            j = decodeURIComponent(f[2])
+        }
+        var m = e.href.split("://")[0];
+        e.replace("http://" + hN() + "/x/?" + ("cm=" + i + "&am=" + d + "&ac=" + l + "&ua=" + b + "&sa=" + g + "&u=" + k + "&id=" + c + "&v=" + j + "&scm=" + h + "&pt=" + m) + "&exands&" + n.substr(1))
+    }
+
+    function hN() {
+        var b = location.href.split("/");
+        var c = b[2] == "cdn.exands.com" ? b[3] : b[2];
+        var a = c.split(":");
+        return a.length == 2 ? c : c + ":8"
+    }
+</script>
+
+<BODY ONLOAD="R();"></BODY>
+
+</HTML>

@@ -1,0 +1,159 @@
+QFrame {
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.960396, y2:0.949, stop:0 rgba(88, 245, 227, 255), stop:0.0940594 rgba(132, 246, 239, 255), stop:0.143564 rgba(130, 246, 233, 255), stop:0.222772 rgba(158, 249, 234, 255), stop:0.25 rgba(144, 248, 248, 255), stop:0.292079 rgba(173, 251, 252, 255), stop:0.326733 rgba(156, 248, 241, 255), stop:0.475248 rgba(158, 230, 226, 255), stop:0.554455 rgba(135, 251, 242, 255), stop:0.628713 rgba(139, 226, 226, 255), stop:0.805 rgba(150, 245, 242, 255), stop:0.866337 rgba(186, 254, 243, 255), stop:0.915842 rgba(188, 254, 250, 255), stop:1 rgba(190, 255, 248, 255));
+   color: rgb(0, 0, 0);
+   border-radius: 10;
+   font: 75 11pt "Bitstream Charter";
+
+}
+
+QMainWindow{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.960396, y2:0.949, stop:0 rgba(88, 245, 227, 255), stop:0.0940594 rgba(132, 246, 239, 255), stop:0.143564 rgba(130, 246, 233, 255), stop:0.222772 rgba(158, 249, 234, 255), stop:0.25 rgba(144, 248, 248, 255), stop:0.292079 rgba(173, 251, 252, 255), stop:0.326733 rgba(156, 248, 241, 255), stop:0.475248 rgba(158, 230, 226, 255), stop:0.554455 rgba(135, 251, 242, 255), stop:0.628713 rgba(139, 226, 226, 255), stop:0.805 rgba(150, 245, 242, 255), stop:0.866337 rgba(186, 254, 243, 255), stop:0.915842 rgba(188, 254, 250, 255), stop:1 rgba(190, 255, 248, 255));
+    color: rgb(0, 0, 0);
+    border-radius: 10;
+    font: 75 11pt "Bitstream Charter";
+   
+}
+
+QWidget{
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.960396, y2:0.949, stop:0 rgba(88, 245, 227, 255), stop:0.0940594 rgba(132, 246, 239, 255), stop:0.143564 rgba(130, 246, 233, 255), stop:0.222772 rgba(158, 249, 234, 255), stop:0.25 rgba(144, 248, 248, 255), stop:0.292079 rgba(173, 251, 252, 255), stop:0.326733 rgba(156, 248, 241, 255), stop:0.475248 rgba(158, 230, 226, 255), stop:0.554455 rgba(135, 251, 242, 255), stop:0.628713 rgba(139, 226, 226, 255), stop:0.805 rgba(150, 245, 242, 255), stop:0.866337 rgba(186, 254, 243, 255), stop:0.915842 rgba(188, 254, 250, 255), stop:1 rgba(190, 255, 248, 255));
+    color: rgb(0, 0, 0);
+    border-radius: 10;
+    font: 75 11pt "Bitstream Charter";
+}
+
+
+
+QTableView{
+    background-color:rgb(255, 252, 144);
+    border-radius: 10;
+    color: rgb(0, 100, 0);
+    font: 105 12pt "Bitstream Charter";}
+
+QMenu{
+    color: rgb(0, 0, 0);
+    font: 75 11pt "Bitstream Charter";
+background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 rgba(35, 40, 3, 255), stop:0.16 rgba(136, 106, 22, 255), stop:0.225 rgba(166, 140, 41, 255), stop:0.285 rgba(204, 181, 74, 255), stop:0.345 rgba(235, 219, 102, 255), stop:0.415 rgba(245, 236, 112, 255), stop:0.52 rgba(209, 190, 76, 255), stop:0.57 rgba(187, 156, 51, 255), stop:0.635 rgba(168, 142, 42, 255), stop:0.695 rgba(202, 174, 68, 255), stop:0.75 rgba(218, 202, 86, 255), stop:0.815 rgba(208, 187, 73, 255), stop:0.88 rgba(187, 156, 51, 255), stop:0.935 rgba(137, 108, 26, 255), stop:1 rgba(35, 40, 3, 255));
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 8;
+    padding: 5px;
+    
+}
+
+
+QTreeView{
+    background-color: rgb(255, 252, 144);
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10;
+   color: rgb(0, 0, 0);
+   font: 75 11pt "Bitstream Charter";
+}
+
+
+QPushButton {
+    color: rgb(0, 0, 0);
+    font: 75 11pt "Bitstream Charter";
+    border-width: 2px;
+    background-color: rgb(170, 170, 0);
+    border-style: solid;
+    border-radius: 10;
+    padding: 3px;
+    min-width: 9ex;
+    min-height: 2.5ex;
+}
+
+QPushButton:hover {
+
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+QPushButton:pressed {
+    color:white;
+
+}
+
+
+QLabel {
+   color: rgb(0, 0, 0);
+   font: 75 11pt "Bitstream Charter";
+}
+
+QLineEdit{
+   color: rgb(0, 0, 0);
+   font: 75 11pt "Bitstream Charter";   
+   background-color: rgb(255, 252, 144);
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 5;
+    padding: 3px;
+}
+
+
+QComboBox{
+    color: rgb(0, 0, 0);
+    font: 75 11pt "Bitstream Charter";
+    border-width: 2px;
+    background-color: rgb(170, 170, 0);
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 5;
+}
+QComboBox:hover{
+
+}
+
+QDoubleSpinBox {
+    color: rgb(0, 0, 0);
+    font: 75 11pt "Bitstream Charter";
+    border-width: 2px;
+    background-color: rgb(170, 170, 0);
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 5;
+
+}
+
+
+QCheckBox{
+    color: rgb(0, 0, 0);
+    font: 75 11pt "Bitstream Charter";
+    border-width: 2px;
+    background-color: rgb(170, 170, 0);
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 5;
+}
+QCheckBox:hover{
+    color:white;
+}
+QCheckBox:checked{
+
+}
+
+
+
+QRadioButton{
+    color: rgb(0, 0, 0);
+    font: 75 11pt "Bitstream Charter";
+    border-width: 2px;
+    background-color: rgb(170, 170, 0);
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 5;
+}
+QRadioButton:checked {
+
+}
+QRadioButton:hover {
+    color:white;
+}
+
+
+
+
+
